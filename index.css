@@ -1,0 +1,35 @@
+:root {
+  --primary: #990000;
+  /* VIT Red/Maroon */
+  --primary-dark: #7a0000;
+  --secondary: #ffcc00;
+  /* Gold */
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  background-image:
+    radial-gradient(at 0% 0%, rgba(153, 0, 0, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 204, 0, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(153, 0, 0, 0.05) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 204, 0, 0.1) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-color);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
